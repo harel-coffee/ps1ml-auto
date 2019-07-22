@@ -1,6 +1,6 @@
 import numpy as np
 import itertools
-import matplotlib.pyplot as plt
+
 
 def makeTransients(N, A_min = 60, A_max = 100,
                    B_min = -0.5, B_max = 0.0, t1_min = 5, t1_max = 50,
@@ -42,6 +42,7 @@ def plot_confusion_matrix(cm, classes,
 
     plt.imshow(cm, interpolation='nearest', cmap=cmap, aspect='equal')
     plt.axis('equal')
+    print('test2')
     plt.title(title)
     tick_marks = np.arange(len(classes))
     plt.xticks(tick_marks, classes, rotation=45)
